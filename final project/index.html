@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETFIT Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <div id="container">
+        <div id="logo">GET<b>FIT</b></div> 
+        <div id="openNav">
+           
+        </div>
+      
+        <div id="navbar">
+            <i class="fas fa-times" id="closeNav"></i>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="pagination">
+            <div id="page1" class="paginationBtns activePagination">home</div>
+            <div id="page2" class="paginationBtns">about</div>
+            <div id="page3" class="paginationBtns">register</div>
+        </div>
+        <div id="allPages">
+            <!-- Home Page -->
+
+        
+
+            <div id="home">
+                <div id="content">
+                    <p>STAY STRONG, STAY</p>
+                    <h2>FAT<b>LESS</b></h2>
+                    <p>NO EXCERCISE... NO EXTRA FRIES!!</p>
+                    <a href="#contact">
+                    <button>JOIN US!</button></a>
+                    
+                    
+                    
+                </div>
+                <div id="text">FIERCE</div>
+                <div id="sideImg">
+                    <img src="assets/fitness.png"  width="70%" alt="">
+                    
+
+                </div>
+                <div id="socialLinks">
+                    <a href="#contact"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#contact"><i class="fab fa-instagram"></i></a>
+                    <a href="#contact"><i class="fab fa-youtube"></i></a>
+                    <a href="#contact"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- About Page -->
+            <div id="about">
+              
+                <link rel="stylesheet" href="form.html">
+                <div id="aboutContent">
+                    <div id="image">
+                        <img src="assets/fitness.jpg" alt="">
+                    </div>
+                    <div id="contentText">
+                        <h2>About <b>GETFIT</b></h2>
+                        <p>Welcome To The <b>Fatless Club</b></p>
+                        <div id="line"></div>
+                        <p>We started modestly as one small gym in a humble basement studio in New <br>York Queens, fresh meadows in 2010 as a welcoming place for a diverse <br>group of people to get fit. While we believe in the power of fitness to improve <br> lives, we also know exercise is hard work and everyone can use a little more<br> motivation. So we’ve fused fitness and entertainment so that we can make<br> serious exercise fun.</p>
+                    </div>
+                </div>
+                <div id="footer">
+                        <p><b>Health is priority</b> join us today.</p>
+                    </div>
+            </div>
+            <!-- resssgi -->
+            <div id="contact">
+                <div class="container">
+                    <h1>Join in us today</h1>
+                    <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+                      <table>
+                        <tr>
+                          <td><label for="name">Name:</label></td>
+                          <td><input type="text" name="name" id="name" placeholder="your name"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="email">Email:</label></td>
+                          <td><input type="text" name="email" id="email" placeholder="your email"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="password">Password:</label></td>
+                          <td><input type="password" name="password" id="password"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="phoneNumber">Phone Number:</label></td>
+                          <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="gender">Gender:</label></td>
+                          <td>Male: <input type="radio" name="gender" value="male">
+                            Female: <input type="radio" name="gender" value="female">
+                            Other: <input type="radio" name="gender" value="other"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="language">language</label></td>
+                          <td>
+                            <select name="language" id="language">
+                              <option value="">Select language</option>
+                              <option value="English">English</option>
+                              <option value="Spanish">Spanish</option>
+                              <option value="French">French</option>
+                              <option value="Portuguese">Portuguese</option>
+                              <option value="Italian">Italian</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><label for="zipcode">Zip Code:</label></td>
+                          <td><input type="number" name="zipcode" id="zipcode"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="about">About:</label></td>
+                          <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+                        </tr>
+                      </table>
+                    </form>
+                </div>
+                 
+                <div id="footer">
+                        <p><b>health is priority</b> join us today.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
